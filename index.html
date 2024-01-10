@@ -139,20 +139,25 @@
 
         <section>
             <h3>Message User</h3>
-                <form>
-                    <input>
-                    <textarea></textarea>
+                <form action="submit" method="post">
+                    <input type="search" id="search" name="search" placeholder="Search for User">
+                    <textarea id="message" name="message" placeholder="Message for User"></textarea>
                     <button>Send</button>
                 </form>
         </section>
 
         <section>
             <h3>Settings</h3>
-                <p>Send Email Notifications</p> <!-- Toggle Switch On/Off-->
-                <p>Set Profile to Public</p> <!-- Toggle Switch On/Off-->
-                <select>
-                    <option></option>
-                    <option></option>
+                <label for="email-notifications">Send Email Notifications</label> 
+                <input type="checkbox" id="email-notifications" name="email-notifications"><!-- Toggle Switch On/Off-->
+                <label for="privacy-setting">Set Profile to Public</label> 
+                <input type="checkbox" id="privacy-setting" name="privacy-setting"><!-- Toggle Switch On/Off-->
+                <select name="timezone" id="timezone">
+                    <option value="">Select Timezone</option>
+                    <option value="eastern">Eastern</option>
+                    <option value="central">Central</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="pacific">Pacific</option>
                 </select>
                 <button>Save</button>
                 <button>Cancel</button>
