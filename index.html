@@ -48,7 +48,116 @@
         </ul>
     </nav>
 
-    <main></main>
+    <main>
+        <section>
+            <h2>Dashboard</h2>
+                <!-- JavaScript Alert will go directly under the H2 -->
+                <h3>Traffic</h3>
+                    <ul>
+                        <li><a href="#top">Hourly</a></li>
+                        <li><a href="#top">Daily</a></li>
+                        <li><a href="#top">Weekly</a></li>
+                        <li><a href="#top">Monthly</a></li>
+                    </ul>
+                    <canvas id="line-chart"></canvas>
+                <h3>Daily Traffic</h3>
+                    <canvas id="bar-chart"></canvas>
+                <h3>Mobile Users</h3>
+                    <canvas id="pie-chart"></canvas>
+        </section>
+
+        <section>
+            <h3>Social Stats</h3>
+                <div>
+                    <img src="svgs/facebook.svg" alt="Facebook Icon">
+                    <h4>Facebook</h4>
+                    <span>10,320</span>
+                </div>
+                <div>
+                    <img src="svgs/instagram.svg" alt="Instagram Icon">
+                    <h4>Instagram</h4>
+                    <span>16,445</span>
+                </div>
+                <div>
+                    <img src="svgs/twitter.svg" alt="Twitter Icon">
+                    <h4>Twitter</h4>
+                    <span>22,189</span>
+                </div>
+        </section>
+
+        <section>
+           <h3>New Members</h3> 
+                <div>
+                    <img src="images/member-1.jpg" alt="Victoria Chambers Headshot">
+                    <span>Victoria Chambers</span><br>
+                    <span>victoria.chambers80@example.com</span><br>
+                    <span>10/15/20</span>
+                </div> 
+                <div>
+                    <img src="images/member-2.jpg" alt="Dale Byrd Headshot">
+                    <span>Dale Byrd</span><br>
+                    <span>dale.byrd52@example.com</span><br>
+                    <span>10/15/20</span>
+                </div> 
+                <div>
+                    <img src="images/member-3.jpg" alt="Dawn Wood Headshot">
+                    <span>Dawn Wood</span><br>
+                    <span>dawn.wood16@example.com</span><br>
+                    <span>10/15/20</span>
+                </div> 
+                <div>
+                    <img src="images/member-4.jpg" alt="Dan Oliver Headshot">
+                    <span>Dan Oliver</span><br>
+                    <span>dan.oliver82@example.com</span><br>
+                    <span>10/15/20</span>
+                </div> 
+        </section>
+
+        <section>
+            <h3>Recent Activity</h3>
+                <div>
+                    <img src="images/member-1.jpg" alt="Victoria Chambers Headshot">
+                    <p>Victoria Chambers commented on <strong>WebApp's SEO Tips</strong></p>
+                    <span>4 hours ago</span>
+                </div>
+                <div>
+                    <img src="images/member-2.jpg" alt="Dale Byrd Headshot">
+                    <p>Dale Byrd liked the post <strong>Facebook's Changes for 2021</strong></p>
+                    <span>5 hours ago</span>
+                </div>
+                <div>
+                    <img src="images/member-3.jpg" alt="Dawn Wood Headshot">
+                    <p>Dawn Wood commented on <strong>Facebook's Changes for 2021</strong></p>
+                    <span>5 hours ago</span>
+                </div>
+                <div>
+                    <img src="images/member-4.jpg" alt="Dan Oliver Headshot">
+                    <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
+                    <span>1 day ago</span>
+                </div>
+        </section>
+
+        <section>
+            <h3>Message User</h3>
+                <form>
+                    <input>
+                    <textarea></textarea>
+                    <button>Send</button>
+                </form>
+        </section>
+
+        <section>
+            <h3>Settings</h3>
+                <p>Send Email Notifications</p> <!-- Toggle Switch On/Off-->
+                <p>Set Profile to Public</p> <!-- Toggle Switch On/Off-->
+                <select>
+                    <option></option>
+                    <option></option>
+                </select>
+                <button>Save</button>
+                <button>Cancel</button>
+        </section>
+    </main>
 
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
