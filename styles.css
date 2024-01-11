@@ -17,6 +17,7 @@ main {
 .nav-svg {
     width: 2.5rem;
     height: 2.5rem;
+    fill: white;
 }
 
 .social {
@@ -55,10 +56,11 @@ h1 {
     font-size: .7rem;
 }
 
-#bell {
+header svg {
     height: 1.6rem;
     width: 1.6rem;
     margin-right: .5rem;
+    fill: white;
 }
 
 .line {
@@ -86,7 +88,26 @@ header p {
 
 /* MAIN NAV */
 
+nav {
+    background-color: #5a5a8a;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 0;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 
 
