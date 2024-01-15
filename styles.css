@@ -5,4 +5,28 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    display: grid;
 }
+
+
+
+
+
+/* HEADER */
+/* NAV */
+/* MAIN */
+main {
+    display: grid;
+}
+
+
+
+/* DASHBOARD */
+/* TRAFFC */
+/* DAILY TRAFFIC */
+/* MOBILE USERS */
+/* SOCIAL STATS */
+/* NEW MEMBERS */
+/* RECENT ACTIVITY */
+/* MESSAGE USER */
+/* SETTINGS */
