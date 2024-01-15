@@ -33,24 +33,26 @@ h1 {
 
 header div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+#notification {
+    background-color: rgb(141, 247, 141);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    align-self: start;
+    position: relative;
+    left: 80%;
 }
 
 header svg {
     fill: #FFFCF7;
 }
 
-#notification {
-    background-color: green;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    align-self: start;
-}
-
 #line {
     height: 2.75rem;
-    padding-left: .5rem;
+    padding-left: .65rem;
     margin-right: .5rem;
     border-right: 1.2px solid rgb(173, 173, 173);
 }
