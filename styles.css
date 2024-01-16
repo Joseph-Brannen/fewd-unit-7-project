@@ -92,11 +92,33 @@ a svg {
 /* MAIN */
 main {
     display: grid;
+    margin: 0 1rem;
 }
 
 
 
 /* DASHBOARD */
+.body-heading {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+h3 {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-bottom: .25rem;
+    align-self: center;
+    font-weight: 600;
+}
+
+#empty-space {
+    border-left: 1px solid rgb(173, 173, 173);
+    border-bottom: 1px solid rgb(173, 173, 173);
+    background-color: rgb(236, 236, 236);
+}
+
+
 /* TRAFFC */
 /* DAILY TRAFFIC */
 /* MOBILE USERS */
