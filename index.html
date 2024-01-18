@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
@@ -71,6 +72,33 @@
                 <li><a href="#">Weekly</a></li>
                 <li><a href="#">Monthly</a></li>
             </ul>
+            <div id="traffic-line-chart">
+                <canvas id="line-chart" style="width:250px"></canvas>
+            </div>
+            <script>
+                const lineChart = document.getElementById('line-chart');
+                const xValues = ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'];
+                const yValues = [750, 1300, 1000, 2000, 1500, 1750, 1250, 1900, 2300, 1500, 2500];
+                
+                new Chart(lineChart, {
+                    type: 'line',
+                    data: {
+                        labels: xValues,
+                        datasets: [{
+                            backgroundColor: 'blue',
+                            borderColor: 'black',
+                            data: yValues
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
             <!-- SVG -->
         </section>
         <section>
@@ -103,6 +131,5 @@
         </section>
     </main>
     <script src="app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
