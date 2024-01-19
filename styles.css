@@ -193,6 +193,17 @@ h4 {
 
 
 /* DAILY TRAFFIC */
+.daily-traffic {
+    margin-top: 1rem;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.daily-traffic h4 {
+    margin-bottom: 1.5rem;
+}
+
+
 /* MOBILE USERS */
 /* SOCIAL STATS */
 /* NEW MEMBERS */

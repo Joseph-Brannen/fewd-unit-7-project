@@ -79,7 +79,6 @@
                 const lineChart = document.getElementById('line-chart');
                 const xValues = ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'];
                 const yValues = [750, 1300, 1000, 2000, 1500, 1750, 1250, 1900, 2300, 1500, 2500];
-                
                 new Chart(lineChart, {
                     type: 'line',
                     data: {
@@ -109,11 +108,40 @@
                     }
                 });
             </script>
-            <!-- SVG -->
         </section>
-        <section>
+        <section class="daily-traffic">
             <h4>Daily Traffic</h4>
-            <!-- SVG -->
+            <div id="daily-traffic-bar-chart">
+                <canvas id="bar-chart" style="height:100px;width:250px"></canvas>
+            </div>
+            <script>
+              const barChart = document.getElementById('bar-chart');
+              const xValue = ['S', 'M', 'T', 'W', 'T', 'F', 'S',];
+              const yValue = [75, 110, 175, 125, 225, 200, 100];
+              new Chart(barChart, {
+                type: 'bar',
+                data: {
+                    labels: xValue,
+                    datasets: [{
+                        label: '', 
+                        data: yValue,
+                        backgroundColor: '#897dc4'    
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }    
+              });  
+            </script>
         </section>
         <section>
             <h4>Mobile Users</h4>
