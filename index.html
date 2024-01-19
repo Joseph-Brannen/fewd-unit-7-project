@@ -84,9 +84,14 @@
                     type: 'line',
                     data: {
                         labels: xValues,
-                        datasets: [{
-                            backgroundColor: 'blue',
-                            borderColor: 'black',
+                        datasets: [{ 
+                            label: '',
+                            backgroundColor: 'rgba(137, 125, 196, 0.25)',
+                            pointBackgroundColor: 'rgba(137, 125, 196, 0.6)',
+                            borderColor: 'rgba(137, 125, 196, 0.25)',
+                            borderWidth: '.6', 
+                            fill: true,
+                            tension: .6,
                             data: yValues
                         }]
                     },
@@ -94,6 +99,11 @@
                         scales: {
                             y: {
                                 beginAtZero: true
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
                             }
                         }
                     }
