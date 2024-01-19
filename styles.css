@@ -92,7 +92,7 @@ a svg {
 /* MAIN */
 main {
     display: grid;
-    margin: 0 1rem;
+    /*margin: 0 1rem;*/
 }
 
 
@@ -157,6 +157,11 @@ h3 {
 
 
 /* TRAFFIC */
+.traffic {
+    padding-bottom: .75rem;
+    border-bottom: 1px solid lightgray;
+}
+
 h4 {
     padding-left: .5rem;
     text-transform: uppercase;
