@@ -205,6 +205,20 @@ h4 {
 
 
 /* MOBILE USERS */
+.mobile-users {
+    margin-top: 1rem;
+    border-bottom: 1px solid lightgray;
+}
+
+#mobile-user-donut-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 228px;
+}
+
+
 /* SOCIAL STATS */
 /* NEW MEMBERS */
 /* RECENT ACTIVITY */

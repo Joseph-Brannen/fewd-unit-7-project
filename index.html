@@ -143,10 +143,42 @@
               });  
             </script>
         </section>
-        <section>
+
+
+
+        <section class="mobile-users">
             <h4>Mobile Users</h4>
-            <!-- SVG -->
+            <div id="mobile-user-donut-chart">
+                <canvas id="donut-chart"></canvas>
+            </div>
+            <script>
+                const donutChart = document.getElementById('donut-chart');
+                const x = ['Desktop', 'Tablet', 'Phones'];
+                const y = [70, 15, 15];
+                const barColors = ['#897dc4', 'rgb(103, 194, 103)', 'rgb(103, 161, 194)'];
+
+                new Chart(donutChart, {
+                    type: 'doughnut',
+                    data: {
+                        labels: x,
+                        datasets: [{
+                            backgroundColor: barColors,
+                            data: y, 
+                        }] 
+                    },
+                    options: {
+                        plugins: {
+                            legend: {
+                                position: 'right'
+                            }
+                        }
+                    }
+                });
+            </script>
         </section>
+    
+
+
         <section>
             <h4>Social Stats</h4>
             <!-- SVG with 2 spans. Separate each group with a div? -->
