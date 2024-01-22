@@ -224,6 +224,44 @@ h4 {
 
 
 /* SOCIAL STATS */
+.social-stats {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+    margin-top: 1rem;
+}
+
+svg {
+    grid-area: svg;
+    fill: #897dc4;
+}
+
+#fb, #insta, #x {
+    grid-area: name;
+    font-weight: 700;
+    color: #897dc4;
+}
+
+.score {
+    grid-area: score;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.facebook, .instagram, .twitter {
+    height: 90px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid gray;
+    margin: 1rem;
+    background-color: lightgray;
+    grid-template-areas: 
+    "svg name"
+    "svg score";
+}
+
+
 /* NEW MEMBERS */
 /* RECENT ACTIVITY */
 /* MESSAGE USER */
