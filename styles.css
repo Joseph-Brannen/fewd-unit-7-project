@@ -263,8 +263,42 @@ svg {
 
 
 /* NEW MEMBERS */
+.new-members {
+    border-bottom: 1px solid lightgray;
+    margin-top: 1rem;
+}
 
+.victoria, .dale, .dawn, .dan {
+    display: grid;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
 
+.victoria, .dale, .dawn {
+    border-bottom: 1px solid lightgray;
+}
+
+.new-members img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.new-members .name {
+    margin-bottom: -.25rem;
+}
+
+.new-members span, .new-members address a {
+    font-size: .8rem;
+}
+
+.new-members address a {
+    text-decoration: none;
+}
 
 /* RECENT ACTIVITY */
 /* MESSAGE USER */
