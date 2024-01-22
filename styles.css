@@ -301,5 +301,39 @@ svg {
 }
 
 /* RECENT ACTIVITY */
+.recent-activity {
+    border-bottom: 1px solid lightgray;
+    margin-top: 1rem;
+}
+
+.chambers, .byrd, .wood {
+    border-bottom: 1px solid lightgray;
+}
+
+.chambers, .byrd, .wood, .oliver {
+    display: grid;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+
+.recent-activity img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.recent-activity p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.recent-activity p, .recent-activity span{
+    font-size: .8rem;
+}
+
 /* MESSAGE USER */
 /* SETTINGS */
