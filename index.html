@@ -256,10 +256,33 @@
         </section>
 
 
-        <section>
+        <section class="settings">
             <h4>Settings</h4>
+            <div class="toggle">
+                <label for="email" class="email">Send Email Notifications</label>
+                <input type="checkbox" id="email" name="email" class="email-toggle">
+
+                <label for="public" class="public">Set Profile to Public</label>
+                <input type="checkbox" id="public" name="public" class="public-toggle">
+            </div>
+
+            <div class="info">
+                <select name="timezone" id="timezone">
+                    <option value="">Select Timezone</option>
+                    <option value="eastern">Eastern</option>
+                    <option value="central">Central</option>
+                    <option value="mountain">Mountain</option>
+                    <option value="pacific">Pacific</option>
+                </select>
+
+
+                <button class="save">Save</button>
+                <button class="cancel">Cancel</button>
+            </div>
             <!-- 2 pairs of label/input, select menu, 2 buttons -->
         </section>
+
+
     </main>
     <script src="app.js"></script>
 </body>
