@@ -7,3 +7,4 @@ alert.addEventListener( 'click', (e) => {
         alert.remove();
     }
 });
+

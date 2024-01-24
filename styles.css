@@ -253,9 +253,10 @@ svg {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 1rem;
-    border: 1px solid gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
     margin: 1rem;
-    background-color: lightgray;
+    background-color: #f7f5f5;
     grid-template-areas: 
     "svg name"
     "svg score";
@@ -357,11 +358,17 @@ svg {
     margin-top: .5rem;
     margin-bottom: .5rem;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid lightgray;;
 }
 
 .messaging input, .messaging textarea {
-    background-color: lightgray;
+    padding-left: .5rem;
+    background-color: #f7f5f5;
+    font-size: .9rem;
+}
+
+.messaging textarea {
+    padding-top: .5rem;
 }
 
 .messaging input {
@@ -387,11 +394,19 @@ svg {
     background-color: rgba(137, 125, 196, 0.7);
 }
 
+.messaging input:focus, .messaging textarea:focus {
+    outline-color: #897dc4;
+}
+
 
 /* SETTINGS */
 .settings {
     margin-top: 1rem;
-    padding-bottom: .75rem;
+    padding-bottom: 1.5rem;
+}
+
+.settings h4 {
+    padding-left: 1rem;
 }
 
 .toggle {
@@ -399,6 +414,7 @@ svg {
     margin-top: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
     row-gap: 30px; 
     grid-template-areas: 
     "email email-toggle"
@@ -413,9 +429,11 @@ svg {
 
 .email-toggle, .public-toggle {
     -webkit-appearance: none;
+    justify-self: end;
     position: relative;
-    width: 50px;
-    height: 30px;
+    width: 90px;
+    height: 35px;
+    border: 2px solid lightgray;
     border-radius: 25px;
     background-color: #ccc;
     transition: background .3s;
@@ -423,26 +441,35 @@ svg {
     cursor: pointer;
 }
 
+.email-toggle::before, .public-toggle::before {
+    content: 'ON';
+    color: #FFFCF7;
+    position: absolute;
+    top: 9px;
+    right: 70%;
+}
+
 
 .email-toggle::after, .public-toggle::after {
     content: '';
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
+    border: 1px solid lightgray;
     border-radius: 50%;
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 1.4rem;
+    width: 1.4rem;
     background-color: rgb(255, 255, 255);
     transition: left .3s;
 }
 
 .email-toggle:checked, .public-toggle:checked {
-    background-color: rgb(141, 221, 141);
+    background-color: #897dc4;
 }
 
 .email-toggle:checked::after, .public-toggle:checked::after {
-    left: 70%;
+    left: 80%;
 }
 
 
@@ -470,7 +497,8 @@ svg {
     display: grid;
     margin-left: 1rem;
     margin-right: 1rem;
-    gap: 5px 10px; 
+    gap: 15px 20px;
+    grid-template-columns: repeat(2, 1fr); 
     grid-template-areas: 
     "select select"
     "save cancel";
@@ -478,15 +506,15 @@ svg {
     
 select {
     grid-area: select;
-    padding: .75rem;
-    border-color: gray;
+    padding: 1rem;
+    border-color: lightgray;
     border-radius: 5px;
     margin-top: 2rem;
-    background-color: lightgray;
+    background-color: #f7f5f5;
 }
 
 .save, .cancel {
-    padding: .75rem;
+    padding: .9rem;
     border: none;
     border-radius: 5px;
     color: #FFFCF7;
@@ -494,15 +522,37 @@ select {
 
 .save {
     grid-area: save;
-    margin-right: .5rem;
+    text-transform: uppercase;
     background-color: #897dc4;
+}
+
+.save:hover {
+    background-color: rgba(137, 125, 196, 0.9);
+}
+
+.save:active {
+    background-color: rgba(137, 125, 196, 0.7);
 }
 
 .cancel {
     grid-area: cancel;
-    margin-left: .5rem;
-    background-color: gray;
+    text-transform: uppercase;
+    background-color: rgb(160, 160, 160);
 }
+
+.cancel:hover {
+    background-color: rgba(160, 160, 160, 0.9);
+}
+
+.cancel:active {
+    background-color: rgba(160, 160, 160, 0.7);
+}
+
+select:focus {
+    outline-color: #897dc4;
+}
+
+
 
 
 
