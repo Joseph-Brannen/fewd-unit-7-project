@@ -73,7 +73,7 @@
                 <li><a href="#">Monthly</a></li>
             </ul>
             <div id="traffic-line-chart">
-                <canvas id="line-chart" style="height: 150px; width: 250px"></canvas>
+                <canvas id="line-chart" style="width:250px"></canvas>
             </div>
             <script>
                 const lineChart = document.getElementById('line-chart');
@@ -89,16 +89,15 @@
                             pointBackgroundColor: 'rgba(137, 125, 196, 0.6)',
                             borderColor: 'rgba(137, 125, 196, 0.25)',
                             borderWidth: '.6', 
-                            fill: true,
+                            fill: true, 
                             tension: .6,
                             data: yValues
                         }]
                     },
                     options: {
-                        maintainAspectRatio: false,
                         scales: {
                             y: {
-                                beginAtZero: true
+                                beginAtZero: true,
                             }
                         },
                         plugins: {
@@ -113,7 +112,7 @@
         <section class="daily-traffic">
             <h4>Daily Traffic</h4>
             <div id="daily-traffic-bar-chart">
-                <canvas id="bar-chart" style="height:100px;width:250px"></canvas>
+                <canvas id="bar-chart"></canvas>
             </div>
             <script>
               const barChart = document.getElementById('bar-chart');
@@ -138,7 +137,7 @@
                     plugins: {
                         legend: {
                             display: false
-                        }
+                        }    
                     }
                 }    
               });  
