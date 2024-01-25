@@ -17,7 +17,7 @@ header {
     align-items: center;
     background-color: #8685c9;
     color: rgb(250, 250, 250);
-    padding: .65rem .65rem;
+    padding: .7rem .65rem;
 }
 
 h1 {
@@ -85,9 +85,9 @@ header p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #433877;
-    color: #FFFCF7;
-    padding: .55rem 1.5rem;
+    background-color: #555580;
+    color: rgb(250, 250, 250);
+    padding: .45rem 2rem;
 }
 
 li {
@@ -95,7 +95,7 @@ li {
 }
 
 a svg {
-    fill: #FFFCF7;
+    fill: rgb(250, 250, 250);
 }
 
 /* MAIN */
