@@ -73,7 +73,7 @@
                 <li><a href="#">Monthly</a></li>
             </ul>
             <div id="traffic-line-chart">
-                <canvas id="line-chart" style="width:250px"></canvas>
+                <canvas id="line-chart" style="height: 150px; width: 250px"></canvas>
             </div>
             <script>
                 const lineChart = document.getElementById('line-chart');
@@ -95,6 +95,7 @@
                         }]
                     },
                     options: {
+                        maintainAspectRatio: false,
                         scales: {
                             y: {
                                 beginAtZero: true

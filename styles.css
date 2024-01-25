@@ -101,6 +101,7 @@ a svg {
 /* MAIN */
 main {
     display: grid;
+    padding-top: .4rem;
     /*margin: 0 1rem;*/
 }
 
@@ -174,19 +175,22 @@ main {
 }
 
 h4 {
-    padding-left: .5rem;
+    padding-left: 1rem;
+    font-size: .95rem;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
 .traffic-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-left: 0;
+    padding-left: 1rem;
+    padding-right: 2rem;
 }
 
 .traffic-list li {
-    padding: .75rem .25rem .75rem 0;
+    padding: .5rem .25rem .75rem 0;
 }
 
 .traffic-list a {
@@ -194,12 +198,15 @@ h4 {
     text-decoration: none;
     text-align: left;
     color: black;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .traffic-list a:focus {
-    background-color: rgb(128, 223, 128);
+    background-color: rgb(140, 211, 140);
     border-radius: 40px;
+    color: #FFFCF7;
+    font-weight: 300;
 }
 
 
