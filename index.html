@@ -85,18 +85,16 @@
                         labels: xValues,
                         datasets: [{ 
                             label: '',
-                            backgroundColor: 'rgba(137, 125, 196, 0.25)',
-                            pointBackgroundColor: 'rgba(137, 125, 196, 0.6)',
-                            borderColor: 'rgba(137, 125, 196, 0.25)',
+                            backgroundColor: 'rgba(134, 133, 201, 0.3)',
+                            pointBackgroundColor: 'rgba(134, 133, 201, 0.4)',
+                            borderColor: 'rgba(134, 133, 201, 0.35)',
                             borderWidth: '.6', 
                             fill: true, 
                             tension: .6,
                             data: yValues
                         }]
                     },
-                    options: {
-                        //aspectRatio: 2.22,
-                        //responsive: true, 
+                    options: { 
                         aspectRatio: 2.5,
                         layout: {
                             padding: 15,
@@ -105,19 +103,21 @@
                             x: {
                                 ticks: {
                                     font: {
-                                        size: 11
+                                        size: 11.5
                                     },
                                     padding: -3
                                 }
                             },
                             y: {
-                                //stacked: true,
-                                //max: 2500,
+                                border: {
+                                    width: 1.2,
+                                    color: 'rgba(160, 160, 160, 1)'
+                                },
                                 ticks: {
                                     stepSize: 500,
                                     autoSkip: false,
                                     font: {
-                                        size: 11
+                                        size: 11.5
                                     },
                                     padding: 2
                                 },
