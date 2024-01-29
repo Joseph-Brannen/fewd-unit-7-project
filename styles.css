@@ -170,7 +170,7 @@ main {
 
 /* TRAFFIC */
 .traffic {
-    padding-bottom: .75rem;
+    padding-bottom: 0rem;
     border-bottom: 1px solid lightgray;
 }
 
@@ -198,7 +198,7 @@ h4 {
     text-decoration: none;
     text-align: left;
     color: black;
-    font-size: 1rem;
+    font-size: .95rem;
     font-weight: 500;
 }
 
