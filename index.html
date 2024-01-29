@@ -158,13 +158,39 @@
                     datasets: [{
                         label: '', 
                         data: yValue,
-                        backgroundColor: '#897dc4'    
+                        backgroundColor: '#8685c9',  
+                        borderWidth: '1'  
                     }]
                 },
                 options: {
+                    aspectRatio: 2,
+                    layout: {
+                        padding: 15
+                    },
                     scales: {
+                        x: {
+                            font: {
+                                size: 11.5
+                            },
+                            padding: -10
+                        },
                         y: {
-                            beginAtZero: true
+                            border: {
+                                width: 1.2,
+                                color: 'rgba(160, 160, 160, 1)'
+                            },
+                            ticks: {
+                                stepSize: 50,
+                                autoSkip: false,
+                                font: {
+                                        size: 11.5
+                                },
+                                padding: 2
+                            },
+                            beginAtZero: true,
+                            font: {
+                                size: 11.5
+                            }
                         }
                     },
                     plugins: {
