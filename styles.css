@@ -234,34 +234,16 @@ h4 {
 
 /* SOCIAL STATS */
 .social-stats {
-    padding-bottom: 1rem;
+    padding-bottom: .25rem;
     border-bottom: 1px solid lightgray;
-    margin-top: 1rem;
-}
-
-svg {
-    grid-area: svg;
-    fill: #897dc4;
-}
-
-#fb, #insta, #x {
-    grid-area: name;
-    font-weight: 700;
-    color: #897dc4;
-}
-
-.score {
-    grid-area: score;
-    font-size: 2rem;
-    font-weight: 400;
+    margin-top: .75rem;
 }
 
 .facebook, .instagram, .twitter {
-    height: 90px;
+    height: 100px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
-    padding: 1rem;
+    padding-left: 1rem;
     border: 1px solid lightgray;
     border-radius: 5px;
     margin: 1rem;
@@ -269,6 +251,38 @@ svg {
     grid-template-areas: 
     "svg name"
     "svg score";
+}
+
+.facebook-svg, .instagram-svg, .twitter-svg {
+    display: grid;
+    grid-area: svg;
+    background-color: #8685c9;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.facebook-svg svg, .instagram-svg svg, .twitter-svg svg {
+    fill: #FFFCF7;
+}
+
+
+#fb, #insta, #x {
+    grid-area: name;
+    font-weight: 700;
+    color: #8685c9;   
+    align-self: end;
+    justify-self: left;
+}
+
+.score {
+    grid-area: score;
+    font-size: 2.5rem;
+    font-weight: 300;
+    align-self: start;
 }
 
 
