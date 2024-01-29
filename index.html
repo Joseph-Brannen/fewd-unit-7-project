@@ -210,21 +210,33 @@
             <script>
                 const donutChart = document.getElementById('donut-chart');
                 const x = ['Desktop', 'Tablet', 'Phones'];
-                const y = [70, 15, 15];
-                const barColors = ['#897dc4', 'rgb(103, 194, 103)', 'rgb(103, 161, 194)'];
+                const y = [66, 17, 17];
+                const barColors = ['#8685c9', 'rgb(140, 211, 140)', 'rgb(65, 192, 201)' /*'rgb(65, 196, 206)'*/];
                 new Chart(donutChart, {
                     type: 'doughnut',
                     data: {
                         labels: x,
                         datasets: [{
                             backgroundColor: barColors,
+                            borderWidth: 0,
                             data: y, 
                         }] 
                     },
                     options: {
+                        cutout: 36,
+                        aspectRatio: 2,
+                        layout: {
+                            padding: 2
+                        },
                         plugins: {
                             legend: {
-                                position: 'right'
+                                position: 'right',
+                                labels: {
+                                    boxWidth: 21,
+                                    font: {
+                                        weight: 700
+                                    }
+                                }
                             }
                         }
                     }

@@ -228,15 +228,7 @@ h4 {
 }
 
 #mobile-user-donut-chart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -1.25rem;
-    margin-bottom: -2rem;
-    width: 250px;
-    height: 250px;
+    margin: 1.5rem 1rem;
 }
 
 
