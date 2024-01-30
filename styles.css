@@ -586,6 +586,222 @@ select:focus {
 
 
 
+/* MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+
+body {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(90%, 1fr);
+    grid-template-areas:
+    "header header"
+    "nav dashboard"
+    "nav alert"
+    "nav main";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+    display: grid;
+    justify-content: start;
+    align-items: stretch;
+}
+
+.main-nav {
+    display: grid;
+    max-width: 10%;
+    grid-template-rows: repeat(4, 60px);
+    grid-template-areas:
+    "item-one"
+    "item-two"
+    "item-three"
+    "item-four";
+}
+
+#item-one {
+    grid-area: item-one;
+}
+
+#item-two {
+    grid-area: item-two;
+}
+
+#item-three {
+    grid-area: item-three;
+}
+
+#item-four {
+    grid-area: item-four;
+}
+
+.dashboard {
+    grid-area: dashboard;
+}
+
+#alert {
+    grid-area: alert;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "traffic traffic"
+    "daily-traffic mobile-users"
+    "social-stats social-stats"
+    "new-members new-members"
+    "recent-activity recent-activity"
+    "message-user message-user"
+    "settings settings";
+}
+
+.traffic {
+    display: grid;
+    grid-area: traffic;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "traffic traffic-list"
+    "line line";
+}
+
+.traffic h5 {
+    grid-area: traffic;
+    margin-right: auto;
+}
+
+.traffic-list {
+    grid-area: traffic-list;
+    padding-right: 0;
+}
+
+.traffic-list li {
+    padding-top: 0;
+}
+
+#traffic-line-chart {
+    grid-area: line;
+    padding-right: 1rem;
+}
+
+.daily-traffic {
+    grid-area: daily-traffic;
+    padding-right: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-right: 1px solid lightgray;
+    margin-top: 0;
+}
+
+.mobile-users {
+    grid-area: mobile-users;
+    padding-left: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+}
+
+.social-stats {
+    display: grid;
+    grid-area: social-stats;
+    justify-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: .5rem;
+    margin-right: .5rem;
+    grid-template-areas: 
+    "social social social"
+    "fb insta twitter";
+}
+
+.social-stats h5 {
+    grid-area: social;
+}
+
+.facebook, .instagram, .twitter {
+    height: 92px;
+    padding-right: .5rem;
+    margin: .5rem 0rem .5rem .5rem;
+}
+
+.facebook-svg, .instagram-svg, .twitter-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.facebook-svg svg, .instagram-svg svg, .twitter-svg svg {
+    width: 25px;
+    height: 25px;
+}
+
+.facebook {
+    grid-area: fb;
+}
+
+.instagram {
+    grid-area: insta;
+}
+
+.twitter {
+    grid-area: twitter;
+}
+
+.new-members {
+    grid-area: new-members;
+}
+
+.recent-activity {
+    grid-area: recent-activity;
+}
+
+.message-user {
+    grid-area: message-user;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 1024px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
