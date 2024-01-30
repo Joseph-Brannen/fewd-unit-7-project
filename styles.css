@@ -22,7 +22,7 @@ header {
 
 h1 {
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     margin-right: auto;
 }
 
@@ -31,7 +31,7 @@ h1 {
 }
 
 #trademark {
-    font-size: 1rem;
+    font-size: 1.15rem;
     vertical-align: text-top;
 }
 
@@ -60,22 +60,22 @@ header svg:hover {
 }
 
 #line {
-    height: 2.5rem;
-    padding-left: .65rem;
-    margin-right: .5rem;
+    height: 2.75rem;
+    padding-left: .75rem;
+    margin-right: .6rem;
     border-right: 1.2px solid rgb(160, 160, 160);
 }
 
 header img {
     border-radius: 50%;
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.35rem;
+    height: 2.35rem;
     margin-right: .5rem;
 }
 
 header p {
     white-space: nowrap;
-    font-size: .75rem;
+    font-size: .8rem;
 }
 
 
@@ -87,7 +87,7 @@ header p {
     align-items: center;
     background-color: #555580;
     color: rgb(250, 250, 250);
-    padding: .45rem 2rem;
+    padding: .6rem 2.5rem .3rem;
 }
 
 li {
@@ -108,7 +108,7 @@ main {
 
 /* DASHBOARD */
 .dashboard {
-    height: 52px;
+    height: 57px;
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
@@ -134,7 +134,7 @@ main {
     grid-template-columns: 90% 1fr;
     justify-content: center;
     align-items: center;
-    height: 2.35rem;
+    height: 2.5rem;
     padding: .25rem .75rem;
     border-radius: 6px;
     margin: 1rem;
@@ -174,7 +174,7 @@ main {
     border-bottom: 1px solid lightgray;
 }
 
-h4 {
+h5 {
     padding-left: 1rem;
     font-size: .95rem;
     font-weight: 600;
@@ -190,7 +190,7 @@ h4 {
 }
 
 .traffic-list li {
-    padding: .5rem .25rem .75rem 0;
+    padding: .5rem .25rem 1.5rem 0;
 }
 
 .traffic-list a {
@@ -216,7 +216,7 @@ h4 {
     border-bottom: 1px solid lightgray;
 }
 
-.daily-traffic h4 {
+.daily-traffic h5 {
     margin-bottom: 1.25rem;
 }
 
@@ -228,7 +228,7 @@ h4 {
 }
 
 #mobile-user-donut-chart {
-    margin: 1.5rem 1rem;
+    margin: 1.6rem 1rem;
 }
 
 
@@ -306,8 +306,8 @@ h4 {
 }
 
 .new-members img {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 3.95rem;
+    height: 3.95rem;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -317,7 +317,7 @@ h4 {
 }
 
 .new-members span, .new-members address a {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .new-members address a {
@@ -344,8 +344,8 @@ h4 {
 }
 
 .recent-activity img {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 3.95rem;
+    height: 3.95rem;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -356,7 +356,7 @@ h4 {
 }
 
 .recent-activity p, .recent-activity span{
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 /* MESSAGE USER */
@@ -366,7 +366,7 @@ h4 {
     border-bottom: 1px solid lightgray;
 }
 
-.message-user h4 {
+.message-user h5 {
     margin-bottom: .5rem;
     margin-left: .5rem;
 }
@@ -386,8 +386,12 @@ h4 {
 
 .messaging input, .messaging textarea {
     padding-left: .5rem;
-    background-color: #f7f5f5;
-    font-size: .9rem;
+    background-color: #fcf9f9;
+    font-size: .9rem; 
+}
+
+::placeholder {
+    color: rgb(199, 199, 199);
 }
 
 .messaging textarea {
@@ -399,26 +403,27 @@ h4 {
 }
 
 .messaging textarea {
-    height: 7rem;
+    height: 9rem;
 }
 
 .messaging button {
     height: 3rem;
     text-transform: uppercase;
-    background-color: #897dc4;
-    color: #FFFCF7;
+    background-color: #8685c9;
+    color: rgb(241, 241, 241);
+    letter-spacing: .08rem;
 }
 
 .messaging button:hover {
-    background-color: rgba(137, 125, 196, 0.9);
+    background-color: rgba(134, 133, 201, 0.9);
 }
 
 .messaging button:active {
-    background-color: rgba(137, 125, 196, 0.7);
+    background-color: rgba(134, 133, 201, 0.7);
 }
 
 .messaging input:focus, .messaging textarea:focus {
-    outline-color: #897dc4;
+    outline-color: #8685c9;
 }
 
 
@@ -428,7 +433,7 @@ h4 {
     padding-bottom: 1.5rem;
 }
 
-.settings h4 {
+.settings h5 {
     padding-left: 1rem;
 }
 
@@ -438,7 +443,7 @@ h4 {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    row-gap: 30px; 
+    row-gap: 35px; 
     grid-template-areas: 
     "email email-toggle"
     "public public-toggle";
@@ -466,7 +471,7 @@ h4 {
 
 .email-toggle::before, .public-toggle::before {
     content: 'ON';
-    color: #FFFCF7;
+    color: rgb(241, 241, 241);
     position: absolute;
     top: 9px;
     right: 70%;
@@ -488,7 +493,7 @@ h4 {
 }
 
 .email-toggle:checked, .public-toggle:checked {
-    background-color: #897dc4;
+    background-color: #8685c9;
 }
 
 .email-toggle:checked::after, .public-toggle:checked::after {
@@ -529,32 +534,35 @@ h4 {
     
 select {
     grid-area: select;
-    padding: 1rem;
+    padding: .9rem;
     border-color: lightgray;
     border-radius: 5px;
     margin-top: 2rem;
-    background-color: #f7f5f5;
+    background-color: #fcf9f9;
+    color: rgb(163, 163, 163);
+    font-size: 1rem;
 }
 
 .save, .cancel {
-    padding: .9rem;
+    padding: 1rem;
     border: none;
     border-radius: 5px;
-    color: #FFFCF7;
+    color: rgb(241, 241, 241);
+    letter-spacing: .05rem;
 }
 
 .save {
     grid-area: save;
     text-transform: uppercase;
-    background-color: #897dc4;
+    background-color: #8685c9;
 }
 
 .save:hover {
-    background-color: rgba(137, 125, 196, 0.9);
+    background-color: rgba(134, 133, 201, 0.9);
 }
 
 .save:active {
-    background-color: rgba(137, 125, 196, 0.7);
+    background-color: rgba(134, 133, 201, 0.7);
 }
 
 .cancel {
@@ -572,7 +580,7 @@ select {
 }
 
 select:focus {
-    outline-color: #897dc4;
+    outline-color: #8685c9;
 }
 
 
