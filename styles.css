@@ -306,8 +306,8 @@ h4 {
 }
 
 .new-members img {
-    width: 4rem;
-    height: 4rem;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -317,7 +317,7 @@ h4 {
 }
 
 .new-members span, .new-members address a {
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 .new-members address a {
@@ -344,8 +344,8 @@ h4 {
 }
 
 .recent-activity img {
-    width: 4rem;
-    height: 4rem;
+    width: 3.75rem;
+    height: 3.75rem;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -356,7 +356,7 @@ h4 {
 }
 
 .recent-activity p, .recent-activity span{
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 /* MESSAGE USER */
