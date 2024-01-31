@@ -586,8 +586,8 @@ select:focus {
 
 
 
-/* MEDIA QUERIES*/
 
+/* MEDIA QUERIES*/
 @media (min-width: 768px) {
 
 body {
@@ -600,10 +600,16 @@ body {
     "nav main";
 }
 
+
+
+/* HEADER */
 header {
     grid-area: header;
 }
 
+
+
+/* NAV */
 nav {
     grid-area: nav;
     display: grid;
@@ -638,14 +644,23 @@ nav {
     grid-area: item-four;
 }
 
+
+
+/* DASHBOARD */
 .dashboard {
     grid-area: dashboard;
 }
 
+
+
+/* ALERT */
 #alert {
     grid-area: alert;
 }
 
+
+
+/* MAIN */
 main {
     grid-area: main;
     display: grid;
@@ -660,6 +675,9 @@ main {
     "settings settings";
 }
 
+
+
+/* TRAFFIC */
 .traffic {
     display: grid;
     grid-area: traffic;
@@ -688,6 +706,9 @@ main {
     padding-right: 1rem;
 }
 
+
+
+/* DAILY TRAFFIC */
 .daily-traffic {
     grid-area: daily-traffic;
     padding-right: .5rem;
@@ -697,6 +718,9 @@ main {
     margin-top: 0;
 }
 
+
+
+/* MOBILE USERS */
 .mobile-users {
     grid-area: mobile-users;
     padding-left: .5rem;
@@ -705,6 +729,9 @@ main {
     margin-top: 0;
 }
 
+
+
+/* SOCIAL STATS */
 .social-stats {
     display: grid;
     grid-area: social-stats;
@@ -719,12 +746,13 @@ main {
 
 .social-stats h5 {
     grid-area: social;
+    margin-bottom: .25rem;
 }
 
 .facebook, .instagram, .twitter {
     height: 92px;
     padding-right: .5rem;
-    margin: .5rem 0rem .5rem .5rem;
+    margin: .5rem 0rem 1rem .5rem;
 }
 
 .facebook-svg, .instagram-svg, .twitter-svg {
@@ -749,24 +777,70 @@ main {
     grid-area: twitter;
 }
 
+
+
+/* NEW MEMBERS */
 .new-members {
     grid-area: new-members;
 }
 
+.victoria, .dale, .dawn, .dan {
+    grid-template-columns: 1fr 4fr 4fr;
+    column-gap: 10px;
+    grid-template-areas: 
+    "img name date"
+    "img address date";
+}
+
+.new-members img {
+    grid-area: img;
+    justify-self: start;
+}
+
+.new-members .name {
+    grid-area: name;
+    text-align: left;
+    align-self: end;
+}
+
+.new-members address {
+    grid-area: address;
+    text-align: left;
+    align-self: start;
+}
+
+.new-members .join-date {
+    grid-area: date;
+    text-align: right;
+    align-self: center;
+}
+
+
+
+
+/* RECENT ACTIVITY */
 .recent-activity {
     grid-area: recent-activity;
 }
 
+
+
+/* MESSAGE USER */
 .message-user {
     grid-area: message-user;
 }
 
+
+
+/* SETTINGS */
 .settings {
     grid-area: settings;
 }
 
 
 }
+
+
 
 
 
