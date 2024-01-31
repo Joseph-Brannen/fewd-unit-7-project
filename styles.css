@@ -823,6 +823,39 @@ main {
     grid-area: recent-activity;
 }
 
+.chambers, .byrd, .wood, .oliver {
+    grid-template-columns: 1fr 6fr 1fr;
+    column-gap: 10px;
+    grid-template-areas:
+    "img p after"
+    "img span after";
+}
+
+.recent-activity img {
+    grid-area: img;
+}
+
+.recent-activity p {
+    grid-area: p;
+    margin: 0;
+    text-align: left;
+    align-self: end;
+}
+
+.recent-activity span {
+    grid-area: span;
+    text-align: left;
+    align-self: start;
+}
+
+.chambers::after, .byrd::after, .wood::after, .oliver::after {
+    content: '>';
+    grid-area: after;
+    font-size: 1.5rem;
+    text-align: right;
+    align-self: center;
+}
+
 
 
 /* MESSAGE USER */
