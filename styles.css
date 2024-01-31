@@ -887,6 +887,83 @@ main {
 
 @media (min-width: 1024px) {
 
+body {
+    grid-template-columns: 80px 1fr;
+}
+
+/* HEADER */
+
+
+
+/* NAV */
+
+
+
+/* DASHBOARD */
+
+.dashboard {
+    grid-template-columns: 1fr 7fr;
+}
+
+.dashboard h3 {
+   text-align: center;
+   padding-left: 0;
+   padding-right: 0; 
+}
+
+/* ALERT */
+
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+/* TRAFFIC */
+
+
+
+/* DAILY TRAFFIC */
+
+
+
+/* MOBILE USERS */
+
+/*
+#mobile-user-donut-chart {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#donut-chart {
+    height: 250px;
+    width: 300px;
+    padding-right: 1rem;
+}
+*/
+
+/* SOCIAL STATS */
+
+
+
+/* NEW MEMBERS */
+
+
+
+/* RECENT ACTIVITY */
+
+
+
+/* MESSAGE USER */
+
+
+
+/* SETTINGS */ 
+
+
+
 }
 
 
