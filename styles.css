@@ -1,11 +1,19 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    max-width: 100%;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     display: grid;
+}
+
+main {
+    display: grid;
+    padding-top: .4rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
@@ -99,11 +107,13 @@ a svg {
 }
 
 /* MAIN */
+/*
 main {
     display: grid;
     padding-top: .4rem;
     margin: 0 auto;
 }
+*/
 
 
 /* DASHBOARD */
