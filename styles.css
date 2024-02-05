@@ -891,6 +891,20 @@ body {
     grid-template-columns: 80px 1fr;
 }
 
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) max-content;
+    /*grid-template-columns: repeat(3, minmax(auto-fit, 1fr));*/
+    grid-template-areas: 
+    "traffic traffic traffic"
+    "daily-traffic mobile-users ."
+    "social-stats social-stats social-stats"
+    "new-members recent-activity ."
+    "message-user settings .";
+}
+
+
 /* HEADER */
 
 
@@ -938,10 +952,6 @@ main {
 
 /* SOCIAL STATS */
 
-
-
-/* NEW MEMBERS */
-
 .facebook, .instagram, .twitter {
     min-width: 295px;
 }
@@ -956,17 +966,41 @@ main {
     height: 35px;
 }
 
+
+
+/* NEW MEMBERS */
+
+.new-members {
+    padding-top: 1rem;
+    border-right: 1px solid lightgray;
+    margin-top: 0;
+}
+
 /* RECENT ACTIVITY */
 
 
 
 /* MESSAGE USER */
 
-
+.message-user {
+    padding-top: 1rem;
+    border-right: 1px solid lightgray;
+    margin-top: 0;
+}
 
 /* SETTINGS */ 
 
+.settings {
+    padding-bottom: 1.6rem;
+}
 
+.toggle {
+    grid-template-columns: 1fr 1fr;
+}
+
+.email-toggle, .public-toggle {
+    margin-left: 0;
+}
 
 }
 
