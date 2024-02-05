@@ -942,7 +942,19 @@ main {
 
 /* NEW MEMBERS */
 
+.facebook, .instagram, .twitter {
+    min-width: 295px;
+}
 
+.facebook-svg, .instagram-svg, .twitter-svg {
+    width: 70px;
+    height: 70px;
+}
+
+.facebook-svg svg, .instagram-svg svg, .twitter-svg svg {
+    width: 35px;
+    height: 35px;
+}
 
 /* RECENT ACTIVITY */
 
