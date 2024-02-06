@@ -100,6 +100,8 @@ header p {
 
 li {
     list-style-type: none;
+    width: 34px;
+    height: 34px;
 }
 
 a svg {
