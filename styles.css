@@ -12,8 +12,20 @@ body {
 main {
     display: grid;
     padding-top: .4rem;
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
+}
+
+#line-chart {
+    aspect-ratio: auto;
+}
+
+#bar-chart {
+    aspect-ratio: auto;
+}
+
+#donut-chart {
+    aspect-ratio: auto;
 }
 
 
@@ -109,13 +121,7 @@ a svg {
 }
 
 /* MAIN */
-/*
-main {
-    display: grid;
-    padding-top: .4rem;
-    margin: 0 auto;
-}
-*/
+
 
 
 /* DASHBOARD */
