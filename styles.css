@@ -16,14 +16,19 @@ main {
     margin: 0 auto;
 }
 
+#traffic-line-chart {}
 #line-chart {
     aspect-ratio: auto;
 }
 
+
+#daily-traffic-bar-chart {}
 #bar-chart {
     aspect-ratio: auto;
 }
 
+
+#mobile-user-donut-chart {}
 #donut-chart {
     aspect-ratio: auto;
 }
@@ -241,12 +246,9 @@ h5 {
 
 /* MOBILE USERS */
 .mobile-users {
+    padding-bottom: .5rem;
     margin-top: 1rem;
     border-bottom: 1px solid lightgray;
-}
-
-#mobile-user-donut-chart {
-    margin: 1.6rem 1rem;
 }
 
 
@@ -606,6 +608,41 @@ select:focus {
 
 
 /* MEDIA QUERIES*/
+@media (min-width: 500px) and (max-width: 549px) {
+    #traffic-line-chart {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #daily-traffic-bar-chart {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 649px) {
+    #traffic-line-chart {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #daily-traffic-bar-chart {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+    #traffic-line-chart {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #daily-traffic-bar-chart {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
 @media (min-width: 768px) {
 
 body {
@@ -699,7 +736,7 @@ main {
 .traffic {
     display: grid;
     grid-area: traffic;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "traffic traffic-list"
     "line line";
@@ -712,15 +749,33 @@ main {
 
 .traffic-list {
     grid-area: traffic-list;
-    padding-right: 0;
+    justify-self: end;
+    padding: 0;
+    margin-right: 1.5rem;
 }
 
 .traffic-list li {
-    padding-top: 0;
+    text-align: center;
+    width: 60px;
+    margin-left: .25rem;
+}
+
+#hourly {
+    width: 57px;
+}
+
+#daily {
+    width: 45px;
+}
+
+#weekly {
+    width: 60px;
 }
 
 #traffic-line-chart {
     grid-area: line;
+    height: 17rem;
+    width: 100%;
     padding-right: 1rem;
 }
 
@@ -736,6 +791,11 @@ main {
     margin-top: 0;
 }
 
+#daily-traffic-bar-chart {
+    height: 12rem;
+    width: 100%;
+}
+
 
 
 /* MOBILE USERS */
@@ -745,6 +805,16 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-top: 0;
+}
+
+#mobile-user-donut-chart {
+    margin-top: 1rem;
+}
+
+#donut-chart {
+    height: 12rem;
+    width: 100%;
+    margin-right: .5rem;
 }
 
 
@@ -961,7 +1031,7 @@ main {
 /* MOBILE USERS */
 
 #mobile-user-donut-chart {
-    margin: 2.25rem 1rem 0;
+    margin: 1rem 1rem 0;
 }
 
 
@@ -1020,6 +1090,23 @@ main {
 
 }
 
+
+
+@media (min-width: 1050px) {
+    #traffic-line-chart {
+        height: 23rem;
+    }
+
+    #mobile-user-donut-chart {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #donut-chart {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
 
 
 
