@@ -409,6 +409,42 @@ h5 {
     margin-left: .5rem;
 }
 
+
+
+
+
+#error {
+    display: none;
+    z-index: 1;
+    margin: 0 auto;
+    width: 288px;
+    height: 288px;
+    background-color: purple;
+    text-align: center;
+}
+
+#error button {
+    padding: 1rem;
+}
+
+#confirm {
+    display: none;
+    z-index: 1;
+    margin: 0 auto;
+    width: 288px;
+    height: 288px;
+    background-color: purple;
+    text-align: center;
+}
+
+#confirm button {
+    padding: 1rem;
+}
+
+
+
+
+
 .messaging {
     display: grid;
     margin-left: 1rem;

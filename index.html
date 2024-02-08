@@ -329,9 +329,23 @@
         <section class="message-user">
             <h5>Message User</h5>
             <div class="messaging">
+
+
+
+                <div id="error">
+                    <p><strong>Error:</strong> Please make sure all fields are complete.</p>
+                    <button>Hide Error Message</button>
+                </div>
+                <div id="confirm">
+                    <p>Your message has been submitted!</p>
+                    <button>Hide Confirmation Message</button>
+                </div>
+
+
+                
                 <input type="text" id="text" name="text" placeholder="Search for User">
                 <textarea id="textarea" name="textarea" placeholder="Message for User"></textarea>
-                <button>Send</button>
+                <button id="send-message">Send</button>
             </div>
         </section>
 
