@@ -28,7 +28,11 @@ main {
 }
 
 
-#mobile-user-donut-chart {}
+#mobile-user-donut-chart {
+    margin: 1rem auto;  
+    width: 95%;
+    height: 200px;
+}
 #donut-chart {
     aspect-ratio: auto;
 }
@@ -206,14 +210,28 @@ h5 {
 
 .traffic-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 1rem;
     padding-right: 2rem;
 }
 
 .traffic-list li {
-    padding: .5rem .25rem 1.5rem 0;
+    padding-top: .5rem;
+    padding-bottom: 1.5rem;
+    margin-right: .5rem;
+}
+
+#hourly {
+    width: 57px;
+}
+
+#daily {
+    width: 45px;
+}
+
+#weekly {
+    width: 60px;
 }
 
 .traffic-list a {
@@ -613,9 +631,15 @@ select:focus {
         width: 90%;
         margin: 0 auto;
     }
+    .traffic-list {
+        justify-content: center;
+    }
     #daily-traffic-bar-chart {
         width: 90%;
         margin: 0 auto;
+    }
+    #mobile-user-donut-chart {  
+        width: 75%;
     }
 }
 
@@ -624,9 +648,15 @@ select:focus {
         width: 80%;
         margin: 0 auto;
     }
+    .traffic-list {
+        justify-content: center;
+    }
     #daily-traffic-bar-chart {
         width: 80%;
         margin: 0 auto;
+    }
+    #mobile-user-donut-chart {  
+        width: 70%;
     }
 }
 
@@ -635,9 +665,15 @@ select:focus {
         width: 70%;
         margin: 0 auto;
     }
+    .traffic-list {
+        justify-content: center;
+    }
     #daily-traffic-bar-chart {
         width: 70%;
         margin: 0 auto;
+    }
+    #mobile-user-donut-chart {  
+        width: 70%;
     }
 }
 
@@ -823,7 +859,7 @@ main {
 .social-stats {
     display: grid;
     grid-area: social-stats;
-    justify-items: start;
+    justify-items: normal;
     grid-template-columns: repeat(3, 1fr);
     margin-left: .5rem;
     margin-right: .5rem;
@@ -1022,7 +1058,9 @@ main {
 
 /* TRAFFIC */
 
-
+#traffic-line-chart {
+    height: 20rem;
+}
 
 /* DAILY TRAFFIC */
 
@@ -1061,8 +1099,15 @@ main {
     margin-top: 0;
 }
 
+.victoria, .dale, .dawn, .dan {
+    grid-template-columns: 1fr 3fr 3fr;
+}
+
 /* RECENT ACTIVITY */
 
+.chambers, .byrd, .wood, .oliver {
+    grid-template-columns: 1fr 5fr 1fr;
+}
 
 
 /* MESSAGE USER */
