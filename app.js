@@ -16,31 +16,52 @@ alert.addEventListener( 'click', (e) => {
 
 
 const messageUser = document.querySelector('.message-user');
+const sendMessage = document.getElementById('send-message');
+const user = document.querySelector('.messaging input');
+const textarea = document.querySelector('textarea');
+const error = document.getElementById('error');
+const confirm = document.getElementById('confirm');
+
+error.style.display = "none";
+confirm.style.display = "none";
 
 messageUser.addEventListener( 'click', (e) => {
-    const sendMessage = document.getElementById('send-message');
-    const user = document.querySelector('.messaging input');
-    const textarea = document.querySelector('textarea');
-    const error = document.getElementById('error');
-    const confirm = document.getElementById('confirm');
     user.text = '';
     textarea.text = '';
     if ( sendMessage === e.target && (user.value === '' || textarea.value === '') ) {
         console.log('wrong');
-        error.style.display = "block";
+        error.style.display = "grid";
         sendMessage.style.display = "none";
         user.style.display = "none";
         textarea.style.display = "none";
     } else if ( sendMessage === e.target && user.value !== '' && textarea.value !== '') {
         console.log('right');
-        confirm.style.display = "block";
+        confirm.style.display = "grid";
         sendMessage.style.display = "none";
         user.style.display = "none";
         textarea.style.display = "none";
     }
 });
 
+error.addEventListener( 'click', (e) => {
+    const errorBtn = document.getElementById('error-btn');
+    if ( errorBtn === e.target ) {
+        error.style.display = "none";
+        sendMessage.style.display = "initial";
+        user.style.display = "initial";
+        textarea.style.display = "initial";
+    }
+});
 
+confirm.addEventListener( 'click', (e) => {
+    const confirmBtn = document.getElementById('confirm-btn');
+    if ( confirmBtn === e.target ) {
+        confirm.style.display = "none";
+        sendMessage.style.display = "initial";
+        user.style.display = "initial";
+        textarea.style.display = "initial";
+    }
+});
 
 
 

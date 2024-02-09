@@ -96,7 +96,6 @@
                     },
                     options: { 
                         maintainAspectRatio: false,
-                        //aspectRatio: 2.4,
                         layout: {
                             padding: 15,
                         },
@@ -165,7 +164,6 @@
                 },
                 options: {
                     maintainAspectRatio: false,
-                    //aspectRatio: 1.85,
                     layout: {
                         padding: 15
                     },
@@ -227,7 +225,6 @@
                     options: {
                         cutout: 36,
                         maintainAspectRatio: false,
-                        //aspectRatio: 2,
                         layout: {
                             padding: 2
                         },
@@ -329,27 +326,19 @@
         <section class="message-user">
             <h5>Message User</h5>
             <div class="messaging">
-
-
-
                 <div id="error">
-                    <p><strong>Error:</strong> Please make sure all fields are complete.</p>
-                    <button>Hide Error Message</button>
+                    <p><strong>Error:</strong> Incomplete Fields</p>
+                    <button id="error-btn">X</button>
                 </div>
                 <div id="confirm">
-                    <p>Your message has been submitted!</p>
-                    <button>Hide Confirmation Message</button>
+                    <p><strong>Submitted:</strong> Thanks!</p>
+                    <button id="confirm-btn">X</button>
                 </div>
-
-
-                
                 <input type="text" id="text" name="text" placeholder="Search for User">
                 <textarea id="textarea" name="textarea" placeholder="Message for User"></textarea>
                 <button id="send-message">Send</button>
             </div>
         </section>
-
-
         <section class="settings">
             <h5>Settings</h5>
             <div class="toggle">
@@ -359,7 +348,6 @@
                 <label for="public" class="public">Set Profile to Public</label>
                 <input type="checkbox" id="public" name="public" class="public-toggle">
             </div>
-
             <div class="info">
                 <select name="timezone" id="timezone">
                     <option value="">Select Timezone</option>
@@ -368,14 +356,10 @@
                     <option value="mountain">Mountain</option>
                     <option value="pacific">Pacific</option>
                 </select>
-
-
                 <button class="save">Save</button>
                 <button class="cancel">Cancel</button>
             </div>
         </section>
-
-
     </main>
     <script src="app.js"></script>
 </body>
