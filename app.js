@@ -40,6 +40,8 @@ messageUser.addEventListener( 'click', (e) => {
         sendMessage.style.display = "none";
         user.style.display = "none";
         textarea.style.display = "none";
+        user.value = '';
+        textarea.value = '';
     }
 });
 
