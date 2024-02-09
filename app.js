@@ -12,9 +12,6 @@ alert.addEventListener( 'click', (e) => {
 
 
 
-
-
-
 const messageUser = document.querySelector('.message-user');
 const sendMessage = document.getElementById('send-message');
 const user = document.querySelector('.messaging input');
